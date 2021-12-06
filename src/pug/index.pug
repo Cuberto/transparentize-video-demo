@@ -1,0 +1,20 @@
+extends /_includes/layout
+
+block title
+    title Colorized & Transparent Video Trick - Cuberto
+
+block content
+
+    .cb-layout#view-main
+        .cb-content
+
+            header.cb-demo
+                .cb-demo-bg
+                .cb-demo-preview
+                    .cb-demo-video
+                        // Black and white video
+                        video(preload="auto" autoplay playsinline loop muted)
+                            source(src="/video/main.mp4" type="video/mp4")
+                    .cb-demo-overlay
+                .cb-demo-link
+                    a(href="//cuberto.com/", target="_blank"): span Cuberto
